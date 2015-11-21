@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE4F56DD1AB7DAF200C701A9 /* grid_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4F56DC1AB7DAF200C701A9 /* grid_view.swift */; };
 		AE7F37241AB34839002F379D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7F37231AB34839002F379D /* AppDelegate.swift */; };
 		AE7F37261AB34839002F379D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7F37251AB34839002F379D /* ViewController.swift */; };
 		AE7F37291AB34839002F379D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE7F37271AB34839002F379D /* Main.storyboard */; };
 		AE7F372B1AB34839002F379D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE7F372A1AB34839002F379D /* Images.xcassets */; };
 		AE7F372E1AB34839002F379D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE7F372C1AB34839002F379D /* LaunchScreen.xib */; };
 		AE7F373A1AB34839002F379D /* test_drawingCGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7F37391AB34839002F379D /* test_drawingCGTests.swift */; };
+		AE7F37441AB34852002F379D /* PushButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7F37431AB34852002F379D /* PushButtonView.swift */; };
+		AE7F37481AB35216002F379D /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7F37471AB35216002F379D /* CounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE4F56DC1AB7DAF200C701A9 /* grid_view.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = grid_view.swift; path = test_drawingCG/grid_view.swift; sourceTree = "<group>"; };
 		AE7F371E1AB34839002F379D /* test_drawingCG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_drawingCG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE7F37221AB34839002F379D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE7F37231AB34839002F379D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +40,8 @@
 		AE7F37331AB34839002F379D /* test_drawingCGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test_drawingCGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE7F37381AB34839002F379D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE7F37391AB34839002F379D /* test_drawingCGTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_drawingCGTests.swift; sourceTree = "<group>"; };
+		AE7F37431AB34852002F379D /* PushButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushButtonView.swift; sourceTree = "<group>"; };
+		AE7F37471AB35216002F379D /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 		AE7F37151AB34839002F379D = {
 			isa = PBXGroup;
 			children = (
+				AE7F37471AB35216002F379D /* CounterView.swift */,
+				AE7F37431AB34852002F379D /* PushButtonView.swift */,
+				AE4F56DC1AB7DAF200C701A9 /* grid_view.swift */,
 				AE7F37201AB34839002F379D /* test_drawingCG */,
 				AE7F37361AB34839002F379D /* test_drawingCGTests */,
 				AE7F371F1AB34839002F379D /* Products */,
@@ -161,6 +170,7 @@
 				TargetAttributes = {
 					AE7F371D1AB34839002F379D = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = RHS54MNZHX;
 					};
 					AE7F37321AB34839002F379D = {
 						CreatedOnToolsVersion = 6.2;
@@ -212,8 +222,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE4F56DD1AB7DAF200C701A9 /* grid_view.swift in Sources */,
 				AE7F37261AB34839002F379D /* ViewController.swift in Sources */,
+				AE7F37441AB34852002F379D /* PushButtonView.swift in Sources */,
 				AE7F37241AB34839002F379D /* AppDelegate.swift in Sources */,
+				AE7F37481AB35216002F379D /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +349,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = test_drawingCG/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -346,7 +361,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = test_drawingCG/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -405,6 +422,7 @@
 				AE7F373F1AB34839002F379D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE7F37401AB34839002F379D /* Build configuration list for PBXNativeTarget "test_drawingCGTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +431,7 @@
 				AE7F37421AB34839002F379D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
